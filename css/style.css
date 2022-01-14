@@ -5,7 +5,7 @@
 body{
     font-family: 'Nunito', sans-serif;
     margin: 0;
-    background-color: rgba(80, 92, 91, 0.205);
+    background-color: rgba(167, 129, 170, 0.205);
 }
 a{
     text-decoration: none;
@@ -14,14 +14,16 @@ a{
 li{
     list-style: none;
 }
-.button{
+.btn{
     background-color: #E02C6D;
     border-radius: 41px;
     color: #FFFFFF;
     font-size: 16px;
     padding: 10px 24px;
-    font-weight: 900;
+    font-weight: 700;
     width: fit-content;
+    border: 0;
+    cursor: pointer;
 }
 /* header section styling */
 
@@ -71,6 +73,9 @@ li{
     padding: 0;
     margin: 16px 0; 
 }
+.welcome-text a{
+    color: white;
+}
 .welcome-img{
     background-image: url(../images/Circle\ design.svg);
     background-color: rgba(154, 154, 156, 0.199);
@@ -83,3 +88,118 @@ li{
 
 /* E-commerce Website icons and link styling */
 
+.e-commerce{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 61px;
+    margin: 69px 165px 100px 165px;
+    padding: 36px 0;
+    border-top: 1px solid lightblue;
+    border-bottom: 1px solid lightblue;
+}
+.websites img {
+    width: 99.12px;
+    height: 39.61px;
+}
+
+/* Collection Cards design */
+
+.collection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.collection h2{
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px ;
+}
+.card{
+    box-shadow: 1px 1px 10px  rgba(0, 0, 0, 0.253) ;
+    background-color: white;
+    border-radius: 10px;
+    padding: 17px 14px ;
+}
+.card h3{
+    font-size: 28px; 
+    font-weight: 600;
+    margin-top: 16px;
+    margin-bottom: 10px;
+
+}
+.card h4{
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.rating{
+    color: #FB8200;
+    font-size: 11px;
+}
+.rating-num{
+    font-size: 14px;
+    color: #5E6366;
+    font-weight: bold;
+}
+.description-text{
+    color: #787885;
+    letter-spacing: 0.018em;
+    font-size: 14px;
+    line-height: 143%;
+    font-weight: normal;
+    margin-bottom: 3px;
+}
+.see-more{
+    margin: 0;
+    position: relative;
+    left: 480px;
+    top: 35px;
+}
+.see-more a{
+    color: #E02C6DDE;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* footer section styling */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:  #0A0826;
+    height: 239px;
+    color: white;
+    text-align: center;
+}
+footer> h3{
+    font-size: 24px;
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+footer p{
+    font-weight: bold;
+    font-size: 14px;
+    color: #D9DBE1;
+    line-height: 24px;
+    margin: 10px 0;
+}
+.icon-color a{
+    color: rgba(255, 255, 255, 0.452);
+}
+.icon-color{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* review section styling */
