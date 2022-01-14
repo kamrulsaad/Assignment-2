@@ -203,3 +203,26 @@ footer p{
 }
 
 /* review section styling */
+.review-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.review{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background-color: whitesmoke;
+    width: 500px;
+    height: 200px;
+    border-radius: 15px;
+    padding: 10px;
+    
+}
+.review-card img{
+    width: 50px;
+    height: 50px;
+}
+.review-card{
+    
+}
