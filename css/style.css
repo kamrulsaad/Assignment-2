@@ -64,22 +64,22 @@ li{
     padding: 0 120px;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 .welcome-text h1{
     font-weight: bold;
-    font-size: 52px;
+    font-size: 3em;
     line-height: 70px;
     color: #3A3A3A;
     margin: 0;
 }
 .welcome-text p{
-    font-size: 16px;
+    font-size: 1.2em;
     font-weight: bold;
     line-height: 24px; 
     padding: 0;
     margin: 16px 0; 
+    width: 50%;
 }
 .welcome-text a{
     color: white;
@@ -103,7 +103,7 @@ li{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
     gap: 61px;
     margin: 69px 165px 100px 165px;
     padding: 36px 0;
@@ -111,7 +111,7 @@ li{
     border-bottom: 1px solid lightblue;
 }
 .websites img {
-    width: 99.12px;
+    width: 80%;
     height: 39.61px;
 }
 
@@ -132,12 +132,17 @@ li{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 30px ;
+    margin: 10%;
 }
 .card{
     box-shadow: 1px 1px 10px  rgba(0, 0, 0, 0.253) ;
     background-color: white;
     border-radius: 10px;
     padding: 17px 14px ;
+    min-width: 180px;
+}
+.card img{
+    width: 100%;
 }
 .card h3{
     font-size: 28px; 
@@ -225,7 +230,6 @@ footer p{
 }
 .review-container> h3{
     font-size: 2em;
-
 }
 .review{
     display: grid;
@@ -237,7 +241,8 @@ footer p{
     height: 50px;
 }
 .review-card{  
-    width: 500px;
+    min-width: 250px;
+    max-width: 470px;
     height: 200px;
     background-color: whitesmoke;
     border-radius: 15px;
@@ -249,10 +254,6 @@ footer p{
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
-}
-.user-name{
-    position: relative;
-    left: -120px ;   
 }
 .user-name h3{
     margin: 0;
@@ -294,6 +295,10 @@ footer p{
         align-items: center;
         padding-left: 0%;
     }
+    .e-commerce{
+        margin: 20px;
+        gap: 20px;
+    }
     .welcome{
         flex-direction: column;
         gap: 10px;
@@ -310,9 +315,15 @@ footer p{
    .cards, .review{
        grid-template-columns: 1fr;
    }
+   .card{
+       max-width: 200px;
+   }
+   .card img{
+       width: 100%;
+   }
    .review-card{
        width: 90%;
-       height: 250px;
+       height: 270px;
    }
    .reviewer{
        flex-direction: column;
@@ -336,9 +347,11 @@ footer p{
 
 @media only screen and (min-width:481px) and (max-width: 820px) {
     .all-head{
+        flex-direction: column;
         padding: 10px;
     }
-    .welcome{
+    .welcome{       
+        flex-wrap: wrap;
         justify-content: center;
         gap: 40px;
     }
@@ -354,10 +367,18 @@ footer p{
     }
     .cards,.review{
         grid-template-columns: 1fr 1fr;
+        margin: 10%;
+    }
+    .card{
+        max-width: 350px;
+        min-width: 150px;
+    }
+    .card img{
+        width: 100%;
     }
     .review-card{
-        width: 90%;
-        height: 250px;
+        min-width: 200px;
+        height: 280px;
     }
     .reviewer{
         flex-direction: column;
