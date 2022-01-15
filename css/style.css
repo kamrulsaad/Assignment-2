@@ -64,6 +64,7 @@ li{
     padding: 0 120px;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .welcome-text h1{
@@ -89,8 +90,8 @@ li{
     border-radius: 50%;
 }
 .welcome-img img{
-    width: 440px;
-    height: 414px;
+    width: 100%;
+    height: 100%;
 }
 .welcome-text h1>span{
     color: black;
@@ -102,6 +103,7 @@ li{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap-reverse;
     gap: 61px;
     margin: 69px 165px 100px 165px;
     padding: 36px 0;
@@ -270,6 +272,62 @@ footer p{
 
 /* responsiveness styiling */
 
+/* mobile screen  */
+
 @media only screen and (max-width: 480px) {
-    
+    header ,.welcome{
+        width: 100%;
+    }
+    .all-head{
+        flex-direction: column;
+        margin-bottom: 10px;
+        padding: 0;
+    }
+    .name{
+        width: 200px;
+        font-size: 1em;
+        text-align: center;
+    }
+    .menu ul{
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0%;
+    }
+    .welcome{
+        flex-direction: column;
+        gap: 10px;
+        flex-wrap: wrap;
+        padding: 0;
+        text-align: center;
+    }
+    .welcome-text h1{
+        font-size: 2.5em;
+    }
+    .welcome-img{
+        margin: 10px;
+    }
+   .cards, .review{
+       grid-template-columns: 1fr;
+   }
+   .review-card{
+       width: 90%;
+       height: 250px;
+   }
+   .reviewer{
+       flex-direction: column;
+       gap: 5px;
+       align-items: center;
+   }
+   .user-name{
+       position: relative;
+       left: 0;      
+   }
+}
+
+/* tablet screen  */
+
+@media only screen (max-width:820) {
+   .all-head{
+       flex-direction: column;
+   }
 }
