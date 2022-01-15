@@ -31,6 +31,7 @@ li{
     transform: scale(1.1);
     box-shadow: 1px 1px 10px 3px rgba(0, 0, 0, 0.253) ;
 }
+
 /* header section styling */
 
 .all-head{
@@ -42,14 +43,14 @@ li{
     margin-bottom: 50px;
 }
 .name{
-    font-size: 24px;
+    font-size: 1.5rem;
     color: #3A3A3A;
     font-weight: 800;
 }
 
 .menu ul li a{
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1rem;
     color: #3A3A3A;
 }
 .menu ul{
@@ -90,6 +91,9 @@ li{
 .welcome-img img{
     width: 440px;
     height: 414px;
+}
+.welcome-text h1>span{
+    color: black;
 }
 
 /* E-commerce Website icons and link styling */
@@ -157,7 +161,7 @@ li{
 }
 .description-text{
     color: #787885;
-    letter-spacing: 0.018em;
+    width: 0.018em;
     font-size: 14px;
     line-height: 143%;
     font-weight: normal;
@@ -262,4 +266,10 @@ footer p{
 .review-card:hover{
     transform: translateY(-10px);
     box-shadow: 1px 3px 10px 5px rgba(0, 0, 0, 0.253) ;
+}
+
+/* responsiveness styiling */
+
+@media only screen and (max-width: 480px) {
+    
 }
