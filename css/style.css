@@ -24,6 +24,12 @@ li{
     width: fit-content;
     border: 0;
     cursor: pointer;
+    transition: transform 1s linear, box-shadow 1s linear;
+    
+}
+.btn:hover ,.see-more:hover{
+    transform: scale(1.1);
+    box-shadow: 1px 1px 10px 3px rgba(0, 0, 0, 0.253) ;
 }
 /* header section styling */
 
@@ -162,6 +168,7 @@ li{
     position: relative;
     left: 480px;
     top: 35px;
+    transition: transform 1s linear;
 }
 .see-more a{
     color: #E02C6DDE;
@@ -229,6 +236,7 @@ footer p{
     background-color: whitesmoke;
     border-radius: 15px;
     padding: 15px;
+    transition: transform 2s linear, box-shadow 2s ease-out ;
 }
 .reviewer{
     display: flex;
@@ -253,5 +261,5 @@ footer p{
 }
 .review-card:hover{
     transform: translateY(-10px);
-    transition: transform 2s linear ;
+    box-shadow: 1px 3px 10px 5px rgba(0, 0, 0, 0.253) ;
 }
