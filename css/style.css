@@ -105,13 +105,13 @@ li{
     justify-content: center;
     flex-wrap: wrap;
     gap: 61px;
-    margin: 69px 165px 100px 165px;
+    margin: 69px 165px;
     padding: 36px 0;
     border-top: 1px solid lightblue;
     border-bottom: 1px solid lightblue;
 }
 .websites img {
-    width: 80%;
+    width: 100px;
     height: 39.61px;
 }
 
@@ -132,7 +132,7 @@ li{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 30px ;
-    margin: 10%;
+    margin: 20px 10%;
 }
 .card{
     box-shadow: 1px 1px 10px  rgba(0, 0, 0, 0.253) ;
@@ -177,8 +177,7 @@ li{
 .see-more{
     margin: 0;
     position: relative;
-    left: 480px;
-    top: 35px;
+    left: 30%;
     transition: transform 1s linear;
 }
 .see-more a{
