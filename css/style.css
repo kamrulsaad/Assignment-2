@@ -203,26 +203,55 @@ footer p{
 }
 
 /* review section styling */
+
 .review-container{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 30px;
+}
+.review-container> h3{
+    font-size: 2em;
+
 }
 .review{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    background-color: whitesmoke;
-    width: 500px;
-    height: 200px;
-    border-radius: 15px;
-    padding: 10px;
-    
+    gap: 20px;  
 }
 .review-card img{
     width: 50px;
     height: 50px;
 }
-.review-card{
-    
+.review-card{  
+    width: 500px;
+    height: 200px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    padding: 15px;
+}
+.reviewer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.user-name{
+    position: relative;
+    left: -120px ;   
+}
+.user-name h3{
+    margin: 0;
+}
+.user-name h4{
+    margin:0;
+    color: rgba(128, 128, 128, 0.658);
+}
+.review-card cite{
+    position: relative;
+    top: 50px;
+}
+.review-card:hover{
+    transform: translateY(-10px);
+    transition: transform 2s linear ;
 }
