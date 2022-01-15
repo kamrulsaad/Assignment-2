@@ -325,9 +325,3 @@ footer p{
 }
 
 /* tablet screen  */
-
-@media only screen (max-width:820) {
-   .all-head{
-       flex-direction: column;
-   }
-}
